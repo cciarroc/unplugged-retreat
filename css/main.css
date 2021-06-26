@@ -87,6 +87,14 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+
+
+.content-wrapper{
+  margin: 50px 0;
+  width: 90%;
+}
+
+
 /* ---------- Base Header - Footer Styles ----------*/
 
 header, footer {
@@ -94,27 +102,30 @@ header, footer {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background: #202322;
 }
 
 /* Header Styles */
 
+
+header{
+  padding: 15px 0;
+}
 
 header .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-
-}
-
-header a {
-  display: flex;
-  justify-content: center;
-  flex: 100%;
+  margin: 0;
 }
 
 
-header .header-divider {
+.header-divider {
+  width: 100%;
+  height: 1px;
+  background: #3a3a3a;
+  margin: 10px 0 20px 0;
 
 }
 
@@ -122,61 +133,70 @@ header nav {
   display: flex;
   align-items: center;
   justify-content: space-around;
-
+  flex-flow: row wrap;
+  width: 60%;
 }
 
 header nav ul {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  width: 100%%;
   padding: 0;
 
 }
 
 header nav ul li {
   display: flex;
+  margin: 16px 20px;
+}
 
+header nav ul li a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #e2e3ed;
+  font-size: 1.125em;
+  font-family: "open sans";
+  font-weight: bold;
 }
 
 
 /* Footer Styles */
 
-footer {
+footer{
+  flex-direction: column;
+  font-family: "open sans";
+  color: #e2e3ed;
+  text-align: center;
+}
 
+footer p{
+  margin: 0;
 }
 
 footer .content-wrapper {
-
-
+  width: 55%;
+  margin: 50px 0;
 }
 
-footer .footer-content {
-
+footer .contact{
+  margin-bottom: 50px;
 }
 
-footer .contact {
-
-}
-
-footer .social {
-
-}
-
-footer .social-icons {
+footer .social-icons{
   display: flex;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-
+  flex-flow: row;
 }
 
-footer .social-icons p{
+/* Footer .social-icons p { display: flex; justify and align center} - what does that do?? why in addition to footer .social icons? */
 
+footer .copyright{
+  margin: 20px;
 }
 
 
-footer .copyright {
-
-}
 
 /* ---------- Mobile Styles - Homepage ----------*/
 
@@ -187,6 +207,8 @@ footer .copyright {
   align-items: center;
   justify-content: center;
   flex-flow: row wrap;
+  background: url('../img/hero-img.jpg');
+  object-fit: cover;
 }
 
 /* Aside */
@@ -196,6 +218,7 @@ aside{
   align-items: center;
   justify-content: center;
   flex-flow: row wrap;
+  width: 88%;
 
 }
 
@@ -211,18 +234,30 @@ aside{
 
 .features{
   display: flex;
-  align-content: center;
   justify-content: center;
   flex-flow: row wrap;
-
 }
+
+.features h2{
+  margin-bottom: 60px;
+}
+
+.features article{
+  width: 63%;
+  margin: 30px 0;
+  text-align: center;
+}
+
 
 .features-items{
   display: flex;
   align-content: center;
   justify-content: center;
   flex-flow: row wrap;
+}
 
+.features p{
+  margin: 0;
 }
 
 /* Reviews */
@@ -232,6 +267,16 @@ aside{
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background: #2a423a;
+}
+
+.reviews h2{
+  margin: 20px 0;
+}
+
+.reviews h3{
+  width: 55%;
+  margin: 20px 0;
 }
 
 
