@@ -87,6 +87,46 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+html {
+  font-size: 16px;
+   }
+
+body {
+  font-family: 'open sans', sans-serif;
+  font-size: 1em;
+  color: #e2e3ed;
+  line-height: 1.2em;
+}
+
+
+h1, h2, h3, h4{
+  font-family: 'poppins', sans-serif;
+  font-weight: 400;
+  line-height: 1.2em;
+}
+
+h1{
+  font-size: 3.75em;
+  font-weight: 400;
+  line-height: 1.2em;
+}
+
+h2 {
+  font-size: 2.25em;
+}
+
+h3, h4{
+  font-size: 1.875em;
+}
+
+a{
+  text-decoration: none;
+  color: #e2e3ed;
+}
+
+address {
+  font-style: normal;
+}
 
 
 .content-wrapper{
@@ -152,12 +192,7 @@ header nav ul li {
 }
 
 header nav ul li a{
-  text-decoration: none;
   text-transform: uppercase;
-  color: #e2e3ed;
-  font-size: 1.125em;
-  font-family: 'open sans', sans-serif;
-  font-weight: bold;
 }
 
 
@@ -546,7 +581,7 @@ aside{
       /* Main */
 
       .hero-area h1 {
-        width: 60%;
+        width: 75%;
       }
 
       /* Aside */
