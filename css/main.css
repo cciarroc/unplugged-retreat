@@ -156,7 +156,7 @@ header nav ul li a{
   text-transform: uppercase;
   color: #e2e3ed;
   font-size: 1.125em;
-  font-family: "open sans";
+  font-family: 'open sans', sans-serif;
   font-weight: bold;
 }
 
@@ -218,8 +218,7 @@ aside{
   align-items: center;
   justify-content: center;
   flex-flow: row wrap;
-  width: 88%;
-
+  background: #527158;
 }
 
 .form-description{
@@ -396,15 +395,149 @@ aside{
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media screen and (min-width: 768px) {
+  /* Tablet Styles Here */
+
+      .content-wrapper{
+        max-width: 640px;
+        margin: 100px 0;
+      }
+
+      /* Header */
+
+      header{
+        justify-content: space-around;
+        padding: 33px 0;
+      }
+
+      header .content-wrapper{
+        width: 100%;
+        justify-content: space-between;
+      }
+
+      .header-divider {
+        display: none;
+      }
+
+      header nav{
+        width: 20%;
+      }
+
+      header nav ul{
+        justify-content: space-between;
+      }
+
+      /* Aside */
+
+      aside .content-wrapper{
+        margin: 50px 0;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+      }
+
+      .form-description, .form{
+        width: 40%;
+        margin: 0;
+      }
+
+      /* Features */
+
+      .features article{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-basis: 50%;
+      }
+
+      .features-item-description {
+        width: 50%;
+      }
+
+      /* Reivews */
+
+      .reviews .content-wrapper {
+        /* contains h2 and article in one column */
+      }
+
+      .reviews article {
+        /* contains one div */
+        /* solution code has display: flex; and justify content: space between; - what does that do if only one child element? */
+      }
+
+      .reviews article div {
+        /* contains image, h3, and p; image to the left, h3 and p to the right */
+        width: 49%;
+      }
+
+      /* Footer */
+
+      .footer .content-wrapper {
+        width: 65%;
+        margin: 100px 0;
+      }
+
+      .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      footer .contact {
+        margin-bottom: 0;
+      }
+
+      footer .copyright {
+        width: 100%;
+      }
+
+      /* ======== ABOUT PAGE ======== */
+
+      /* Mission */
+
+      .mission-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 20px;
+      }
+
+      .mission-content p{
+        width: 45%;
+      }
+
+      /* Contact */
+
+      .contact-section .content-wrapper h2{
+        width: 80%;
+      }
+
+      .contact-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+
+      /* ======== FAQ PAGE ======== */
+
+      .faq .content-wrapper{
+        display: flex;
+        flex-flow: row wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+      }
+
+      .faq h2{
+        width: 100%;
+      }
+
+      .faq-content {
+        width: 45%;
+      }
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+@media screen and (min-width: 1200px) {
+  /* Desktop Styles Here */
 }
 
 /* ==========================================================================
