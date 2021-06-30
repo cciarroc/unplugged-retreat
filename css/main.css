@@ -282,10 +282,6 @@ aside{
   background: #527158;
 }
 
-aside h3{
-  font-size: 1.125em;
-}
-
 aside .form-description h3{
   margin: 0;
 }
@@ -516,6 +512,22 @@ input[type=button]{
 @media screen and (min-width: 768px) {
   /* Tablet Styles Here */
 
+      body {
+        line-height: 1.4em;
+      }
+
+      h1{
+        font-size: 3em;
+      }
+
+      h2{
+        font-size: 2.25em;
+      }
+
+      h3, h4{
+        font-size: 1.5em;
+      }
+
       .content-wrapper{
         max-width: 640px;
         margin: 100px 0;
@@ -537,6 +549,10 @@ input[type=button]{
         display: none;
       }
 
+      header .content-wrapper figure {
+        flex-basis: 35%;
+      }
+
       header nav{
         width: 20%;
       }
@@ -544,6 +560,13 @@ input[type=button]{
       header nav ul{
         justify-content: space-between;
       }
+
+      /* Hero area */
+
+      .hero-area{
+        min-height: 600px;
+      }
+
 
       /* Aside */
 
@@ -559,7 +582,16 @@ input[type=button]{
         margin: 0;
       }
 
+      aside .content-wrapper h3{
+        margin: 0 0 25px 0;
+      }
+
       /* Features */
+
+      .features h2{
+        opacity: 0.5;
+        margin: auto;
+      }
 
       .features article{
         display: flex;
@@ -569,23 +601,40 @@ input[type=button]{
       }
 
       .features-item-description {
-        width: 50%;
+        width: 63%;
+      }
+
+      .features p{
+        font-size: 0.875em;
       }
 
       /* Reivews */
 
-      .reviews .content-wrapper {
-        /* contains h2 and article in one column */
+      .reviews .content-wrapper article {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
       }
 
-      .reviews article {
-        /* contains one div */
-        /* solution code has display: flex; and justify content: space between; - what does that do if only one child element? */
+      .reviews figure {
+        width: 49%;
+      }
+
+      .reviews h2{
+        width: 80%;
       }
 
       .reviews article div {
-        /* contains image, h3, and p; image to the left, h3 and p to the right */
         width: 49%;
+      }
+
+      .reviews h3{
+        width: 100%;
+        margin: 0;
+      }
+
+      .reviews p{
+        font-size: 0.875em;
       }
 
       /* Footer */
@@ -621,7 +670,8 @@ input[type=button]{
       }
 
       .mission-content p{
-        width: 45%;
+        font-size: 0.875em;
+        width: 47%;
       }
 
       /* Contact */
@@ -650,7 +700,12 @@ input[type=button]{
       }
 
       .faq-content {
-        width: 45%;
+        width: 47%;
+        margin-top: 0;
+      }
+
+      .faq h4, .faq p{
+        font-size: 0.875em;
       }
 }
 
