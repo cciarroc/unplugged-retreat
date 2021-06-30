@@ -231,6 +231,8 @@ footer .content-wrapper {
   margin: 50px 0;
 }
 
+
+
 footer .contact{
   margin-bottom: 50px;
 }
@@ -240,9 +242,29 @@ footer .social-icons{
   justify-content: space-around;
   align-items: center;
   flex-flow: row;
+
 }
 
-/* Footer .social-icons p { display: flex; justify and align center} - what does that do?? why in addition to footer .social icons? */
+footer .social-icons p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: #527158;
+  border-radius: 50%;
+}
+
+footer .social-icons p a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .social-icons i{
+  font-size: 1.25em;
+}
+
 
 footer .copyright{
   margin: 20px;
@@ -669,11 +691,15 @@ input[type=button]{
       .footer-content {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
       }
 
       footer .contact {
         margin-bottom: 0;
+      }
+
+      footer .social{
+        width: 30%;
       }
 
       footer .copyright {
