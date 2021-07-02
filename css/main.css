@@ -231,8 +231,6 @@ footer .content-wrapper {
   margin: 50px 0;
 }
 
-
-
 footer .contact{
   margin-bottom: 50px;
 }
@@ -555,6 +553,11 @@ input[type=button]{
 @media screen and (min-width: 768px) {
   /* Tablet Styles Here */
 
+      html, body{
+        width: 100%;
+        overflow-x: hidden;
+      }
+
       body {
         line-height: 1.4em;
       }
@@ -741,6 +744,10 @@ input[type=button]{
       }
 
       /* ======== FAQ PAGE ======== */
+
+      .faq{
+        min-height: 75vh;
+      }
 
       .faq .content-wrapper{
         display: flex;
